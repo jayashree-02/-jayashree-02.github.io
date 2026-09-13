@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jayashree D | Portfolio</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#0b0b0f;color:#fff;line-height:1.6}
+nav{position:sticky;top:0;background:#111118;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;z-index:10}
+.logo{font-size:25px;font-weight:bold;color:#b7ff4a}
+nav a{color:white;text-decoration:none;margin-left:22px}
+nav a:hover{color:#b7ff4a}
+section{padding:80px 8%;max-width:1200px;margin:auto}
+.home{min-height:90vh;display:flex;align-items:center;justify-content:space-between;gap:50px}
+.home h1{font-size:55px;margin:15px 0}.home h1 span{color:#b7ff4a}
+.home h2{color:#ccc}.home p{color:#aaa;max-width:600px;margin:20px 0}
+.photo img{width:330px;height:330px;object-fit:cover;border-radius:50%;border:6px solid #b7ff4a}
+.btn{display:inline-block;background:#b7ff4a;color:#111;padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:bold;margin:8px 8px 8px 0}
+.btn.dark{background:transparent;color:white;border:1px solid #b7ff4a}
+h2.title{font-size:38px;margin-bottom:30px;color:#b7ff4a}
+.about p,.contact p{color:#bbb;max-width:850px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:#15151d;border:1px solid #292936;padding:25px;border-radius:12px}
+.card h3{margin-bottom:10px}.card p,.card li{color:#bbb}
+.tags span{display:inline-block;border:1px solid #444;padding:5px 10px;border-radius:20px;margin:5px;color:#ccc;font-size:13px}
+.project{transition:.3s}.project:hover{transform:translateY(-5px);border-color:#b7ff4a}
+a.link{color:#b7ff4a;text-decoration:none;font-weight:bold}
+footer{text-align:center;padding:25px;border-top:1px solid #222;color:#888}
+@media(max-width:700px){
+ nav{flex-direction:column;gap:10px}nav a{margin:0 7px;font-size:13px}
+ .home{flex-direction:column-reverse;text-align:center;padding-top:50px}
+ .home h1{font-size:40px}.photo img{width:250px;height:250px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Jayashree D.</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#internship">Internship</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section id="home" class="home">
+  <div>
+    <p style="color:#b7ff4a;font-weight:bold">B.TECH COMPUTER SCIENCE ENGINEERING</p>
+    <h1>Hi, I'm <span>Jayashree D</span></h1>
+    <h2>Aspiring Software Developer</h2>
+    <p>
+      A motivated Computer Science Engineering undergraduate passionate about
+      programming, problem-solving and continuous learning.
+    </p>
+    <a class="btn" href="#projects">View Projects</a>
+    <a class="btn dark" href="mailto:shreejaya7978@gmail.com">Contact Me</a>
+  </div>
+
+  <div class="photo">
+    <img src="profile.png" alt="Jayashree">
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2 class="title">About Me</h2>
+  <p>
+    I am a motivated final-year B.E. Computer Science Engineering undergraduate
+    with a strong passion for programming, problem-solving and continuous learning.
+    I am committed to enhancing my technical and interpersonal skills to build a
+    successful career in the IT industry. I seek opportunities to apply my
+    knowledge, contribute effectively to real-world projects and grow professionally.
+  </p>
+</section>
+
+<section id="skills">
+  <h2 class="title">Technical Skills</h2>
+  <div class="cards">
+    <div class="card"><h3>Programming</h3><p>Python<br>C++ (Basics)</p></div>
+    <div class="card"><h3>Web Technologies</h3><p>HTML<br>CSS</p></div>
+    <div class="card"><h3>Libraries</h3><p>Pandas<br>Scikit-learn<br>PyMuPDF<br>pdfplumber</p></div>
+    <div class="card"><h3>Tools</h3><p>VS Code<br>Python IDLE<br>Git<br>Streamlit</p></div>
+    <div class="card"><h3>Core Subjects</h3><p>Data Structures & Algorithms<br>DBMS<br>Operating Systems</p></div>
+  </div>
+</section>
+
+<section id="education">
+  <h2 class="title">Education</h2>
+  <div class="card">
+    <h3>B.Tech – Computer Science and Engineering</h3>
+    <p>Hindustan Institute of Technology and Science, Chennai</p>
+    <p>2023 – 2027</p>
+    <p><b>CGPA: 8.17 / 10</b></p>
+  </div>
+</section>
+
+<section id="internship">
+  <h2 class="title">Internship Experience</h2>
+  <div class="card">
+    <h3>Python Automation Intern</h3>
+    <p>Redserv Global Solutions (Redington Group)</p>
+    <p>May 2025 – June 2025</p>
+    <br>
+    <ul>
+      <li>Worked on Python-based automation projects with the IT team.</li>
+      <li>Developed scripts to improve business workflow efficiency.</li>
+      <li>Gained hands-on experience in automation systems.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="title">Projects</h2>
+  <div class="cards">
+
+    <div class="card project">
+      <h3>PDF Invoice Data Extraction System</h3>
+      <p>
+        Developed a Python-based automation system to extract invoice data from
+        PDF files and convert unstructured data into structured Excel reports.
+      </p>
+      <div class="tags">
+        <span>Python</span><span>pdfplumber</span><span>Pandas</span><span>OpenPyXL</span>
+      </div>
+      <a class="link" href="https://github.com/jayashree-02/pdf-extraction" target="_blank">
+        GitHub →
+      </a>
+    </div>
+
+    <div class="card project">
+      <h3>Credit Card Fraud Detection System</h3>
+      <p>
+        Developed a machine learning web application to detect fraudulent credit
+        card transactions using Python and Scikit-learn, with an interactive
+        Streamlit interface for real-time prediction.
+      </p>
+      <div class="tags">
+        <span>Python</span><span>Scikit-learn</span><span>Pandas</span>
+        <span>NumPy</span><span>Streamlit</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2 class="title">Certifications & Achievements</h2>
+  <div class="cards">
+    <div class="card"><h3>GitHub Workshop</h3><p>Workshop experience in GitHub.</p></div>
+    <div class="card"><h3>Python Automation Internship</h3><p>Python Automation Internship Certificate.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="title">Contact Me</h2>
+  <p>Let's connect and build something useful together.</p>
+  <br>
+  <a class="btn" href="mailto:shreejaya7978@gmail.com">Email Me</a>
+  <a class="btn dark" href="tel:+918122962431">Call Me</a>
+  <br><br>
+  <a class="link" href="https://github.com/jayashree-02/pdf-extraction" target="_blank">GitHub</a>
+  &nbsp; | &nbsp;
+  <a class="link" href="https://www.linkedin.com/in/jaya-shree-a72137318/" target="_blank">LinkedIn</a>
+</section>
+
+<footer>
+  © 2026 Jayashree D. All Rights Reserved.
+</footer>
+
+</body>
+</html>
